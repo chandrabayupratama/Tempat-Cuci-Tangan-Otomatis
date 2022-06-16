@@ -3,5 +3,7 @@ Tempat Cuci Tangan yang dibuat dapat membuka kran untuk mengalirkan air secara o
 
 Note :
 1. Link Skematik Rangakaian : https://www.tinkercad.com/things/dpihQVsosZj
+
 Skematik Rangkaian dapat dilihat pada link diatas, pada link tersebut kalian dapat sekaligus mensimulasikan cara kerja dari rangkaian elektronika yang sudah dirancang.
+
 2. Link Demonstrasi Alat : https://youtu.be/M_4BHANIAsM
