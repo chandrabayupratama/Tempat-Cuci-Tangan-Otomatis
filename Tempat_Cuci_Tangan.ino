@@ -2,14 +2,14 @@
 const int triggerPin_1 = 8;
 const int echoPin_1 = 9;
 unsigned int duration_1;
-unsigned int jarak1;
+unsigned int jarak1;  //jarak tangan ke sensor didekat kran air
 const int triggerPin_2 = 3;
 const int echoPin_2 = 4;
 unsigned int duration_2;
-unsigned int jarak2;
+unsigned int jarak2; //jarak tangan ke sensor didekat tempat sabun
 
-Servo myservo1;
-Servo myservo2;
+Servo myservo1;  //servo untuk menarik kran air
+Servo myservo2;  //servo untuk menarik tempat sabun
 
 void setup() {
   pinMode(triggerPin_1, OUTPUT);
@@ -24,7 +24,7 @@ void setup() {
     
   Serial.begin(9600);
 }
-void readSensor_1() {
+void readSensor_1() { //sensor yang ditempatkan dibawah kran air 
   digitalWrite(triggerPin_1, LOW);
   delayMicroseconds(2);
   digitalWrite(triggerPin_1, HIGH);
@@ -36,7 +36,7 @@ void readSensor_1() {
   Serial.print(jarak1);
   Serial.println(" cm");
 }
-void readSensor_2() {
+void readSensor_2() { //sensor yang ditempatkan dibawah tempat sabun
   digitalWrite(triggerPin_2, LOW);
   delayMicroseconds(2);
   digitalWrite(triggerPin_2, HIGH);
